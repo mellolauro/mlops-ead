@@ -7,3 +7,4 @@ matplotlib
 pytest
 pycodestyle
 tensorflow
+pytest>=7.0

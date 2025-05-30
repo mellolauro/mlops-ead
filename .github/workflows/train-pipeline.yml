@@ -2,9 +2,6 @@ name: Train-Pipeline
 
 on:
   push:
-  branches:
-    - layers
-    - branch_01
   pull_request:
     branches:
     - layers
