@@ -18,16 +18,16 @@ logging.basicConfig(level=logging.INFO,
 logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Fetal Health API",
-              openapi_tags=[
-                  {
-                      "name": "Health",
-                      "description": "Get api health"
-                  },
-                  {
-                      "name": "Prediction",
-                      "description": "Model prediction"
-                  }
-              ])
+            openapi_tags=[
+                {
+                    "name": "Health",
+                    "description": "Get api health"
+                },
+                {
+                    "name": "Prediction",
+                    "description": "Model prediction"
+                }
+            ])
 
 
 def load_model():
@@ -35,7 +35,7 @@ def load_model():
     Loads a pre-trained model from an MLflow server.
 
     This function connects to an MLflow server using the provided tracking URI, username,
-     and password.
+    and password.
     It retrieves the latest version of the 'fetal_health' model registered on the server.
     The function then loads the model using the specified run ID and returns the loaded model.
 
@@ -46,9 +46,9 @@ def load_model():
         None
     """
     logging.info('reading model...')
-    MLFLOW_TRACKING_URI = 'https://dagshub.com/renansantosmendes/puc_lectures_mlops.mlflow'
-    MLFLOW_TRACKING_USERNAME = 'renansantosmendes'
-    MLFLOW_TRACKING_PASSWORD = '6d730ef4a90b1caf28fbb01e5748f0874fda6077'
+    MLFLOW_TRACKING_URI = 'https://dagshub.com/lauromello/mlops-ead.mlflow'
+    MLFLOW_TRACKING_USERNAME = 'lauromello'
+    MLFLOW_TRACKING_PASSWORD = 'a685612158b8646e84f26a8b2961c77bce141f47'
     os.environ['MLFLOW_TRACKING_USERNAME'] = MLFLOW_TRACKING_USERNAME
     os.environ['MLFLOW_TRACKING_PASSWORD'] = MLFLOW_TRACKING_PASSWORD
     logging.info('setting mlflow...')
@@ -82,7 +82,7 @@ def startup_event():
 
 
 @app.get(path='/',
-         tags=['Health'])
+        tags=['Health'])
 def api_health():
     """
     A function that represents the health endpoint of the API.
@@ -95,7 +95,7 @@ def api_health():
 
 
 @app.post(path='/predict',
-          tags=['Prediction'])
+        tags=['Prediction'])
 def predict(request: FetalHealthData):
     """
     Predicts the fetal health based on the given request data.
