@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Lauro/P%C3%B3s-PUCMG/03%20-%20Cultura%20e%20Pr%C3%A1ticas%20Dataops%20e%20Mlops/03%20-%20Cultura%20e%20Pr%C3%A1ticas%20Dataops%20e%20Mlops/mlruns/0/e2f06b8fb6b74c2c8629b5b9cc0f3500/artifacts
+end_time: 1748547828097
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e2f06b8fb6b74c2c8629b5b9cc0f3500
+run_name: experiment_mlops_ead
+run_uuid: e2f06b8fb6b74c2c8629b5b9cc0f3500
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1748547811519
+status: 3
+tags: []
+user_id: lauro_otg

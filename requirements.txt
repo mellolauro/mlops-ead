@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+mlflow
+scikit-learn
+pandas
+matplotlib
+locust
+pytest
+pycodestyle
+tensorflow
+pytest>=7.0
