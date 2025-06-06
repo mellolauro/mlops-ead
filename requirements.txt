@@ -4,6 +4,7 @@ mlflow
 scikit-learn
 pandas
 matplotlib
+locust
 pytest
 pycodestyle
 tensorflow

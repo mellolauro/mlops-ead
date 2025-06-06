@@ -46,11 +46,11 @@ def load_model():
         None
     """
     logging.info('reading model...')
-    MLFLOW_TRACKING_URI = 'https://dagshub.com/lauromello/mlops-ead.mlflow'
-    MLFLOW_TRACKING_USERNAME = 'lauromello'
-    MLFLOW_TRACKING_PASSWORD = 'a685612158b8646e84f26a8b2961c77bce141f47'
-    os.environ['MLFLOW_TRACKING_USERNAME'] = MLFLOW_TRACKING_USERNAME
-    os.environ['MLFLOW_TRACKING_PASSWORD'] = MLFLOW_TRACKING_PASSWORD
+    #MLFLOW_TRACKING_URI = 'https://dagshub.com/lauromello/mlops-ead.mlflow'
+    #MLFLOW_TRACKING_USERNAME = 'lauromello'
+    #MLFLOW_TRACKING_PASSWORD = 'a685612158b8646e84f26a8b2961c77bce141f47'
+    #os.environ['MLFLOW_TRACKING_USERNAME'] = MLFLOW_TRACKING_USERNAME
+    #os.environ['MLFLOW_TRACKING_PASSWORD'] = MLFLOW_TRACKING_PASSWORD
     logging.info('setting mlflow...')
     mlflow.set_tracking_uri(MLFLOW_TRACKING_URI)
     logging.info('creating client..')
